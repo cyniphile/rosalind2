@@ -1,5 +1,8 @@
 [workspace]
 
 members = [
-	"fib"
+	"fib",
+	"tools",
+	"gc",
+	"subs"
 	]

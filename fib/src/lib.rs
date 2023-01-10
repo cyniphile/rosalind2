@@ -1,14 +1,4 @@
-use itertools::Itertools;
-use std::fs;
-
-pub fn read_input(filepath: &str) -> (u128, u128) {
-    let data = fs::read_to_string(filepath).expect("Should have been able to read the file");
-    data.split_whitespace()
-        .take(2)
-        .map(|x| x.parse::<u128>().ok().unwrap())
-        .collect_tuple()
-        .unwrap()
-}
+use tools::read_input;
 
 pub fn next_generation(
     last_generation_size: u128,

@@ -1,0 +1,1 @@
+std::iter::Map<std::iter::Zip<std::io::Lines<std::io::BufReader<std::fs::File>>, std::iter::Skip<std::io::Lines<std::io::BufReader<std::fs::File>>>>, [closure@tools/src/lib.rs:98:14: 98:25]>
