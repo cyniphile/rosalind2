@@ -72,7 +72,7 @@ impl StringParsable for DNA {
             'C' => DnaNucleotide::C,
             'G' => DnaNucleotide::G,
             'T' => DnaNucleotide::T,
-            _ => panic!("\"{}\" is not a recognized DNA base.", base),
+            _ => panic!("\"{base}\" is not a recognized DNA base."),
         };
         seq.chars().map(parser).collect()
     }
@@ -163,7 +163,7 @@ mod tests {
     #[test]
     fn test_base_counts() {
         let seq = DNA::parse_string(
-            &"AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC".to_string(),
+            "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC",
         );
         let answer = base_counts(&seq);
         let answer = [
