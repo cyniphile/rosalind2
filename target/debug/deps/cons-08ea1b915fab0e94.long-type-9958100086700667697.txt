@@ -1,0 +1,1 @@
+std::iter::Map<std::iter::Map<std::iter::Zip<std::iter::Zip<std::iter::Zip<std::slice::Iter<'_, usize>, std::slice::Iter<'_, usize>>, std::slice::Iter<'_, usize>>, std::slice::Iter<'_, usize>>, [closure@/Users/luke/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.10.5/src/lib.rs:324:9: 324:13]>, _>

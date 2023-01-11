@@ -3,6 +3,7 @@ use itertools::Itertools;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::{collections::HashMap, fs};
+use strum_macros::EnumIter;
 
 pub fn read_input(filepath: &str) -> (u128, u128) {
     let data = fs::read_to_string(filepath).expect("Should have been able to read the file");
@@ -23,7 +24,7 @@ pub fn read_substring_input(filepath: &str) -> (DNA, DNA) {
         .unwrap()
 }
 
-#[derive(PartialEq, Eq, Hash, Debug)]
+#[derive(PartialEq, Eq, Hash, Debug, EnumIter, Clone, Copy)]
 pub enum DnaNucleotide {
     A,
     C,

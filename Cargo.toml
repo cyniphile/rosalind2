@@ -4,5 +4,6 @@ members = [
 	"fib",
 	"tools",
 	"gc",
-	"subs"
+	"subs",
+	"cons"
 	]
