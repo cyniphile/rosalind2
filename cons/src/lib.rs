@@ -81,7 +81,7 @@ mod tests {
         println!("{}", consensus_string.to_string());
         for nucleotide in DnaNucleotide::iter() {
             let freqs = profile_matrix.get(&nucleotide).unwrap();
-            print!("{}:", nucleotide);
+            print!("{nucleotide}:");
             for b in freqs {
                 print!(" {b}");
             }
